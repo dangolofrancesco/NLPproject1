@@ -1,0 +1,32 @@
+# Ignore dataset files
+Dataset/
+
+# Ignore report files
+Report/
+
+# Ignore saved model files
+Saved Models/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+venv/
+env/
+*.egg-info/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS files
+.DS_Store
