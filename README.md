@@ -53,12 +53,20 @@ NLPproject1/
 
 This project implements various NLP techniques, including:
 
-- **Embeddings**: Word and sentence-level representations
-- **Recurrent Neural Networks (RNNs)**: For sequential processing of conversational data
+- **Embeddings**: Word and sentence-level representations using GloVe
+- **Feedforward Neural Networks (ANNs)**: Baseline approach using averaged embeddings
+- **LSTM (Long Short-Term Memory)**: For sequential processing of conversational data (see `LSTM_GUIDE.md`)
 - **Transformers**: State-of-the-art architectures for context understanding
 - **LLM Prompting**: Leveraging large language models for prediction tasks
 
 The project analyzes the strengths and weaknesses of each approach in the domain of emotion and empathy modeling.
+
+### Implementation Details
+
+- **ANN Implementation**: Uses `GloveEmbedder` (averages word vectors) with `EmpathyDataset` and `DeepEmpathyNet`
+- **LSTM Implementation**: Uses `GloveSequenceEmbedder` (preserves sequences) with `RNNEmpathyDataset` and `LSTMEmpathyNet`
+- **LSTM Variants**: Basic LSTM, LSTM with trainable embeddings, and LSTM with attention mechanism
+- **Bidirectional Processing**: Optional bidirectional LSTM for capturing context from both directions
 
 ## Models
 
