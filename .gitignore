@@ -6,6 +6,7 @@ Report/
 
 # Ignore saved model files
 Saved Models/
+Results/
 
 # Python cache files
 __pycache__/
@@ -30,3 +31,7 @@ env/
 
 # macOS files
 .DS_Store
+
+# Ignore Markdown files but keep the repository root README
+*.md
+!/README.md
